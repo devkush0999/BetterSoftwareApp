@@ -1,6 +1,6 @@
-// src/screens/SignUpScreen.tsx
 import React, { useState } from 'react';
 import { View, Button, StyleSheet, Alert, Text } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 import FormField from '../components/FormField';
@@ -9,6 +9,17 @@ import { calculatePasswordStrength } from '../utils/passwordStrength';
 
 const SignUpScreen = ({ navigation }: { navigation: any }) => {
   const [passwordStrength, setPasswordStrength] = useState(0);
+
+  const saveCredentials = async (email: string, password: string) => {
+    try {
+      const storedUsers = await AsyncStorage.getItem('users');
+      const users = storedUsers ? JSON.parse(storedUsers) : [];
+      users.push({ email, password });
+      await AsyncStorage.setItem('users', JSON.stringify(users));
+    } catch (error) {
+      Alert.alert('Error', 'Failed to save user credentials');
+    }
+  };
 
   return (
     <Formik
@@ -19,11 +30,12 @@ const SignUpScreen = ({ navigation }: { navigation: any }) => {
         password: Yup.string().required('Password is required'),
       })}
       onSubmit={(values) => {
+        saveCredentials(values.email, values.password);
         Alert.alert('Success', 'Sign Up Successful');
         navigation.navigate('Login');
       }}
     >
-      {({ handleSubmit, values, setFieldValue }) => (
+      {({ handleSubmit, setFieldValue }) => (
         <View style={styles.container}>
           <FormField name="name" placeholder="Name" />
           <FormField name="email" placeholder="Email" />

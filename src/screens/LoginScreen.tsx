@@ -15,7 +15,7 @@ const LoginScreen = ({ navigation }: { navigation: any }) => {
     });
   }, []);
 
-  return (
+  return (<>
     <Formik
       initialValues={{ email: savedEmail, password: '', rememberMe: false }}
       validationSchema={Yup.object({
@@ -42,6 +42,9 @@ const LoginScreen = ({ navigation }: { navigation: any }) => {
         </View>
       )}
     </Formik>
+    <Text style={styles.link} onPress={() => navigation.navigate('Store')}>
+    View Stored Users
+  </Text></>
   );
 };
 
