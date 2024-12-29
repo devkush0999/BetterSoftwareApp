@@ -119,6 +119,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+Devesh Kumar singh - [@Portfolio](https://portfolio-gules-tau-20.vercel.app/)
 
 Project Link: [https://github.com/devkush0999/BetterSoftwareApp.git](https://github.com/devkush0999/BetterSoftwareApp.git)
