@@ -28,8 +28,8 @@ const FormField: React.FC<FormFieldProps> = ({ name, placeholder, secureTextEntr
 };
 
 const styles = StyleSheet.create({
-  container: { marginVertical: 10 },
-  input: { borderWidth: 1, borderColor: '#ccc', padding: 10, borderRadius: 5 },
+  container: { marginVertical: 10 ,  },
+  input: { borderWidth: 1,  padding: 10, borderRadius: 15 , backgroundColor: '#fff' ,borderColor: 'black',},
   errorInput: { borderColor: 'red' },
   errorText: { color: 'red', fontSize: 12 },
 });

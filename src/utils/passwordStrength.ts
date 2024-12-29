@@ -1,4 +1,3 @@
-// src/utils/passwordStrength.ts
 export const calculatePasswordStrength = (password: string): number => {
     let strength = 0;
     if (password.length >= 8) strength++;

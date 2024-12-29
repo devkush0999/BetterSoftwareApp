@@ -21,7 +21,7 @@ const SignUpScreen = ({ navigation }: { navigation: any }) => {
     }
   };
 
-  return (
+  return (<View style={styles.container}>
     <Formik
       initialValues={{ name: '', email: '', password: '' }}
       validationSchema={Yup.object({
@@ -36,7 +36,7 @@ const SignUpScreen = ({ navigation }: { navigation: any }) => {
       }}
     >
       {({ handleSubmit, setFieldValue }) => (
-        <View style={styles.container}>
+        <View >
           <FormField name="name" placeholder="Name" />
           <FormField name="email" placeholder="Email" />
           <FormField
@@ -56,11 +56,13 @@ const SignUpScreen = ({ navigation }: { navigation: any }) => {
         </View>
       )}
     </Formik>
+    </View>
   );
+
 };
 
 const styles = StyleSheet.create({
-  container: { padding: 20 },
+  container: {flex: 1, padding: 20 , backgroundColor: '#80EF80'},
   link: { color: 'blue', marginTop: 15, textAlign: 'center' },
 });
 
