@@ -11,33 +11,27 @@ A React Native application for improving software development processes.
       <br />
       Splash Screen
     </td><td align="center">
-      <img src="/src/Assests/SplashScreen.png" width="200" alt="Splash Screen"/>
-      <br />
-      Splash Screen
-    </td><td align="center">
-      <img src="/src/Assests/SplashScreen.png" width="200" alt="Splash Screen"/>
-      <br />
-      Splash Screen
-    </td><td align="center">
-      <img src="/src/Assests/SplashScreen.png" width="200" alt="Splash Screen"/>
-      <br />
-      Splash Screen
-    </td><td align="center">
-      <img src="/src/Assests/SplashScreen.png" width="200" alt="Splash Screen"/>
-      <br />
-      Splash Screen
-    </td><td align="center">
-      <img src="/src/Assests/SplashScreen.png" width="200" alt="Splash Screen"/>
-      <br />
-      Splash Screen
-    </td>
-    <td align="center">
-      <img src="screenshots/login.png" width="200" alt="Login Screen"/>
+      <img src="/src/Assests/LoginScreen.png" width="200" alt="Login Screen"/>
       <br />
       Login Screen
+    </td><td align="center">
+      <img src="/src/Assests/SignupScreen.png" width="200" alt="Signup Screen"/>
+      <br />
+      Signup Screen
+    </td><td align="center">
+      <img src="/src/Assests/LoginModel.png" width="200" alt="LoginModel"/>
+      <br />
+      LoginModel Screen
+    </td><td align="center">
+      <img src="/src/Assests/SignupModel.png" width="200" alt="SignupModel Screen"/>
+      <br />
+      SignupModel Screen
+    </td><td align="center">
+      <img src="/src/Assests/StoreScreen.png" width="200" alt="Store Screen"/>
+      <br />
+      Store Screen
     </td>
-    <!-- Add more screenshots as needed -->
-  </tr>
+   
 </table>
 
 ## Features
@@ -51,7 +45,7 @@ A React Native application for improving software development processes.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/BetterSoftwareApp.git
+git clone https://github.com/devkush0999/BetterSoftwareApp.git
 ```
 
 2. Install dependencies:
@@ -127,4 +121,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
 
-Project Link: [https://github.com/yourusername/BetterSoftwareApp](https://github.com/yourusername/BetterSoftwareApp)
+Project Link: [https://github.com/devkush0999/BetterSoftwareApp.git](https://github.com/devkush0999/BetterSoftwareApp.git)
